@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo ao Vestibular</title>
+    <!-- Favicon da página -->
+    <link rel="icon" href="../img/icons/favicon.ico">
+    <!-- Importação da fonte Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+        integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+        crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Folha de estilo global -->
+    <link rel="stylesheet" href="../css/global.css">
+    <!-- Folha(s) de estilos específica(s) -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- navbar-->
+    <nav class="navbar fixed-top navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold notranslate" href="index.html">Vestibular</a>
+            <div class="btn-group" role="group">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"
+                    aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="btn text-white btn-success">Entrar <i
+                        class="fas fa-sign-in-alt"></i> </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link notranslate" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-3" href="index.html#LoremIpsum">Lorem ipsum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="fullpage">
+        <div class="section s1" id="section-home">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md">
+                        <img src="../img/landingPage.svg" alt="imagem auxiliar">
+                    </div>
+                    <div class="col-md texto-landing-page">
+                        <h1 class="text-white font-weight-bold m-1 mt-0 p-1 notranslate">Vestibular</h1>
+                        <h5 class="text-white m-1 p-1">Mais de você em você mesmo</h5>
+                        <div class="m-3 mb-0 p-1 btn-group btn-landing-page">
+                            <button class="btn-verde" onclick="location.href='login-e-cadastro.html'">Acessar <i
+                                    class="fas fa-sign-in-alt"></i></button>
+                            <button class="btn-roxo" onclick="location.href='#LoremIpsum'"><i
+                                    class="fas fa-plus"></i> Informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section s3">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+            <h3 class="mt-5 p-1 pt-5 text-center text-white font-weight-bold">Lorem Ipsum</h3>
+            <h6 class="px-4 text-white text-center">Lorem ipsum dolor sit amet,<span class="font-weight-bold">consectetur </span> 
+            adipiscing elit.</h6> <!-- INFORMAÇÃO DINAMICA-->
+            <div class="container p-3">
+                <div class="row d-flex justify-content-around align-items-end">
+                    <div class="col-lg-7 col-md-12 shadow text-left" id="container-arredondado">
+                        <div class="testimonial-section">
+                            <h3 class="text-center p-1 font-weight-bold">Integer porttitor lectus vel diam porttito</h3>
+                            <div class="testimonial-contents">                               
+                                    <p class="font-italic py-1 px-3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis egestas. Nullam fermentum mauris nec efficitur eleifend. Quisque fringilla lectus sed orci tincidunt porttitor. 
+                                    Sed eu tellus diam. Nulla elit diam, dictum condimentum ipsum eget, pulvinar pulvinar lacus. Nulla facilisi. Class aptent taciti sociosq</p>
+                                    <h6 class="mt-2 p-1 text-center text-uppercase negrito-roxo">Ipsum</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-none d-md-none d-lg-block col-lg-5 center-image text-right"
+                        id="img-feedback">
+                        <img src="../img/speaker.svg" alt="feedback">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer class="footer p-2">
+                <div class="container">
+                    <div class="social-icons text-center">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+    </div>
+
+    <!-- Bootstrap: Optional JavaScript -> jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Dropdown menu-->
+    <script>
+        $('.dropdown-menu').on({
+            "click": function (e) {
+                e.stopPropagation();
+            }
+        });
+    </script>
+    <!-- Importação Fullpage.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+        integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+        crossorigin="anonymous"></script>
+    <script>
+        var fullpage = new fullpage("#fullpage", {
+            autoScrolling: false,
+            navigation: true,
+            fitToSection: true,
+            navigationTooltips: ["Home", "LoremIpsum"],
+            anchors: ['home', 'LoremIpsum'],
+            showActiveTooltip: false,
+            navigationPosition: "right",
+            scrollBar: true,
+            scrollHorizontally: true
+        });
+
+        fullpage_api.setAllowScrolling(true);
+
+    </script>
+    <!-- Importação da biblioteca de icones FontAwesome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Código JS da testimonial -->
+    <script>
+        $('.testimonial-pics img').click(function () {
+            $(".testimonial-pics img").removeClass("active");
+            $(this).addClass("active");
+
+            $(".testimonial").removeClass("active");
+            $("#" + $(this).attr("alt")).addClass("active");
+        });
+    </script>
+</body>
+
+</html>
